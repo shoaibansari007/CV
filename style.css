@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins ,sans-serif;
+}
+body{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container {
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    background:  #003147;
+    min-height: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 10px 10px 25px #003147;
+    margin: 50px;
+}
+.container .left-side{
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+.container .left-side .profileBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container .left-side .profileBox .profile-img{
+    width: 60%;
+}
+.container .left-side .profileBox .profile-img img{
+    width: 100%;
+    border-radius: 50%;
+    background: grey;
+    
+}
+.container .left-side .profileBox h2{
+    width: 100%;
+    margin: 10px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight:bold;
+    color:aliceblue;
+    letter-spacing: 1px;
+}
+.container .left-side .profileBox span{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: large;
+    color:aliceblue;
+}
+hr {
+    margin: 20px auto;
+    color: #003147;
+    opacity: 0.5;
+}
+.container .right-side{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+.contactBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 25px;
+}
+.contactBox h3{
+    position: relative;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+}
+.contactBox .contacts a{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    text-decoration: none;
+    color: rgb(165, 204, 255);
+    opacity: 0.5;
+}
+.contactBox .contacts a span i{
+    width: 20px;
+    margin-right: 20px;
+    color: #fff;
+}
+.contactBox .contacts a:hover {
+    color: #fff;
+    opacity: 1;
+}
+.contactBox .number a:hover span i{
+    color: black;
+}
+.contactBox .email a:hover span i{
+    color: red;
+}
+.contactBox .linkedin a:hover span i{
+    color: rgb(4, 142, 255);
+}
+.contactBox .location a:hover span i{
+    color: skyblue;
+}
+.qualificationBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+.qualificationBox h3{
+    text-transform: uppercase;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+}
+.qualificationBox span{
+    margin: 5px 0;
+}
+.qualificationBox span p:first-child{
+    color: rgb(61, 131, 252);
+    opacity: 0.5;
+    margin: 5px 0;
+}
+.qualificationBox span p:nth-child(2){
+    color: rgb(165, 204, 255);
+    opacity: 0.8;
+    margin: 5px 0;
+    font-weight: 500;
+}
+.qualificationBox span p:nth-child(3){
+    color: rgb(165, 204, 255);
+    opacity: 0.6;
+    font-weight: 300;
+}
+.language-container{
+    display: flex;
+    flex-direction: column;  
+}
+.language-container h3{
+    text-transform: uppercase;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+    margin-top: 5px;
+}
+.language-container ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 10px;
+}
+.language-container ul li {
+    color: rgb(165, 204, 255);
+    opacity: 0.8;
+    margin: 5px 0;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container .left-side .language-container ul li .lang-percent{
+    width: 75%;
+    height: 8px;
+    background: #fff;
+    margin-top: 5px;
+    display: block;
+    position: relative;
+    border-radius: 4px;
+}
+.container .left-side .language-container ul li .lang-percent::before{
+    content: '';
+    height: 100%;
+    background-color:rgb(61, 131, 252);
+    position: absolute;
+    border-radius: 4px;
+}
+.container .left-side .language-container ul li:first-child .lang-percent::before{
+    width: 70%;
+}
+.container .left-side .language-container ul li:nth-child(2) .lang-percent::before{
+    width: 78%;
+}
+.container .left-side .language-container ul li:last-child .lang-percent::before{
+    width: 75%;
+}
+
+
+
+
+/* -----------------Right-Side------------------- */
+.container .right-side{
+padding: 30px;
+border-top-left-radius: 70px;
+border-bottom-left-radius: 70px;
+box-shadow: inset 5px 0em 10px rgba(0, 49, 71, 0.5);
+}
+.right-side .profile h3,
+.right-side .experience h3,
+.right-side .skills h3{
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bolder;
+    margin-top: 20px;
+    background-color: rgb(0,49,71);
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 49, 71, 0.5);
+}
+.right-side .profile p{
+    margin: 10px 0;
+    text-align: justify;
+    line-height: 25px;
+}
+.experience{
+    margin-top: 50px;
+}
+.experience .exp-container{
+    margin-top: 10px;
+}
+.experience .exp-container .profile-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    color: #003147;
+    font-weight: 600;
+    padding: 5px;
+    font-weight: 600;
+}
+.experience .exp-container .profile-box span:last-child{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+.experience .exp-container .profile-role{
+    padding-left: 30px;
+    list-style-type:disc;
+    line-height: 25px;
+}
+.skills ul{
+    color: #003147;
+    margin: 15px 0;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column; 
+    list-style: none;
+}
+.skills ul li .skill{
+    margin: 10px;
+}
+.skills ul li .skill {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+.skills ul li .percent{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 10px;
+    border: 2px solid #003147 ;
+    display:block;
+    border-radius: 5px;
+}
+.skills ul li .percent::before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    background-color: #003147;
+    border-radius: 5px;
+}
+.skills ul li .html::before{
+    width: 65%;
+}
+.skills ul li .css::before{
+    width: 60%;
+}
+.skills ul li .javasript::before{
+    width: 10%;
+}
+.skills ul li .React::before{
+    width: 2%;
+}   
+/* -----------Media-Query------------ */
+@media (max-width: 955px)
+{
+    body{
+        background: #003147;
+    }
+    .container{
+        grid-template-columns: repeat(1,1fr);
+        margin: 10px auto;
+        padding: 10px;
+    }
+    .container .left-side .profileBox{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .container .right-side{
+    border-bottom-left-radius: 0px;
+    box-shadow: none;
+    }
+}
+@media (max-width: 768px){
+    body{
+        background: #003147;
+    }
+    .container{
+        padding: 20px;
+    }
+}
+@media (max-width: 434px){
+    body{
+        background: #003147;
+    }
+    .container {
+        margin-top: 0px;
+    }
+    .container .left-side{
+        padding: 18px;
+    }
+    .container .left-side .profileBox h2{
+        font-size: 22px;
+    }
+    .right-side .profile h3,
+    .right-side .experience h3,
+    .right-side .skills h3,
+    .contactBox h3,
+    .qualificationBox h3,
+    .language-container h3{
+    font-size: 16px;
+    }
+    .right-side .profile p,
+    .experience .exp-container .profile-role{
+        font-size: 12px;
+    }
+    .container .left-side .profileBox h2{
+        width: 186px;
+    }
+    .experience .exp-container .profile-box{
+    display: flex;
+    flex-direction: column;
+    
+    }
+    .experience .exp-container .profile-box span:last-child{
+        position: relative;
+        margin: 5px 0 5px 5px;
+    }
+}
+@media (max-width: 281px){
+    body{
+        background: #003147;
+    }
+    .container{
+        width: 100%;
+    }
+    .container .left-side{
+        top: -20px;
+    }
+    .container .left-side .profileBox{
+        width: 60%;
+        margin: 0 45px;
+    }
+    .container .right-side{
+        border-top-left-radius: 25px;
+        box-shadow: none;
+     }
+     hr{
+        width: 100%;
+     }
+    
+}
