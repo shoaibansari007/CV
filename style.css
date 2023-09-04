@@ -192,20 +192,33 @@ hr {
     background-color:rgb(61, 131, 252);
     position: absolute;
     border-radius: 4px;
+    width: 0px;
 }
-.container .left-side .language-container ul li:first-child .lang-percent::before{
-    width: 70%;
+.container .left-side .language-container ul li .lang1::before{
+    animation: lang1anim 1s forwards ease-in-out;
+    
 }
-.container .left-side .language-container ul li:nth-child(2) .lang-percent::before{
-    width: 78%;
+.container .left-side .language-container ul li .lang2::before{
+    animation: lang2anim 1s forwards ease-in-out;
 }
-.container .left-side .language-container ul li:last-child .lang-percent::before{
-    width: 75%;
+.container .left-side .language-container ul li .lang3::before{
+    animation: lang3anim 1s forwards ease-in-out;
 }
-
-
-
-
+@keyframes lang1anim{
+    100%{
+        width: 70%;
+    }
+}
+@keyframes  lang2anim{
+    100%{
+        width:78%;
+    }
+}
+@keyframes lang3anim{
+    100%{
+        width: 75%;
+    }
+}
 /* -----------------Right-Side------------------- */
 .container .right-side{
 padding: 30px;
@@ -288,19 +301,41 @@ box-shadow: inset 5px 0em 10px rgba(0, 49, 71, 0.5);
     height: 100%;
     background-color: #003147;
     border-radius: 5px;
+    width: 0%;
 }
 .skills ul li .html::before{
-    width: 65%;
+    animation: htmlanim 1s forwards ease-in-out;
+    
 }
 .skills ul li .css::before{
-    width: 60%;
+    animation: cssanim 1s forwards ease-in-out;
 }
 .skills ul li .javasript::before{
-    width: 10%;
+    animation: jsanim 1s forwards ease-in-out;
 }
 .skills ul li .React::before{
-    width: 2%;
-}   
+    animation: reactanim 1s forwards ease-in-out;
+}
+@keyframes htmlanim{
+    100%{
+        width: 65%;
+    }
+}
+@keyframes  cssanim{
+    100%{
+        width: 60%;
+    }
+}
+@keyframes jsanim{
+    100%{
+        width: 10%;
+    }
+}
+@keyframes reactanim{
+    100%{
+        width: 2%;
+    }
+}
 /* -----------Media-Query------------ */
 @media (max-width: 955px)
 {
